@@ -1,0 +1,33 @@
+[project]
+name = "feedback-assistant"
+version = "0.1.0"
+description = "ML-powered assistant for processing and analyzing user feedback"
+requires-python = ">=3.11"
+
+[project.optional-dependencies]
+dev = [
+    "ruff==0.17.3",
+    "pre-commit>=4.0.0",
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+
+[tool.ruff.lint]
+select = [
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings
+    "F",   # pyflakes
+    "I",   # isort
+    "B",   # flake8-bugbear
+    "UP",  # pyupgrade
+]
+
+[tool.ruff.lint.isort]
+known-first-party = ["feedback_assistant"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+line-ending = "auto"
