@@ -1,6 +1,9 @@
 .venv/
+.ipython/
 .ruff_cache/
 __pycache__/
 *.py[cod]
 *.egg-info/
 .pytest_cache/
+.DS_Store
+bad_example.py
